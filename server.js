@@ -3,8 +3,6 @@ const { parse } = require('url');
 const next = require('next');
 const { Server } = require('socket.io');
 
-// Force production mode for SmartASP deployment
-process.env.NODE_ENV = 'production';
 const dev = process.env.NODE_ENV !== 'production';
 const hostname = process.env.HOST || '0.0.0.0';
 const port = parseInt(process.env.PORT || '3000', 10);
