@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Builds
+.next/
+out/
+dist/
+
+# Env
+.env
+.env.*.local
+production.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Misc
+.DS_Store
+*.swp
+*.swo
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Deployment files
+deploy/
+production/
+*.zip
+*.rar
+node_modules.zip
+node_modules.rar
+prisma.zip
+lib.zip
+
+# OS
+Thumbs.db
+
+# Build artifacts
+*.ps1
+build-production.ps1
+prepare-production.ps1
+rmdir
+start-servers.bat
+web-simple-fixed.config
+server-fixed.js
+server-backup.js
+
+
+
