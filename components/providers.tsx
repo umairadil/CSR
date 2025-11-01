@@ -22,6 +22,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
           duration: 1.1,
           easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
           smoothWheel: true,
+          // Disable Lenis for chat areas to allow native scrolling
+          content: typeof document !== 'undefined' ? document.querySelector('body > div') as HTMLElement : undefined,
         });
 
         const raf = (time: number) => {

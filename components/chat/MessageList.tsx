@@ -76,7 +76,7 @@ export function MessageList({
   }
 
   return (
-    <div className={cn("flex-1 overflow-y-auto p-4 space-y-4", className)} ref={listRef}>
+    <div className={cn("flex-1 overflow-y-auto p-4 space-y-4", className)} ref={listRef} data-lenis-prevent>
       {Object.entries(groupedMessages).map(([date, dateMessages]) => (
         <div key={date}>
           {/* Date Separator */}
